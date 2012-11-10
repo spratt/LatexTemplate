@@ -2,4 +2,12 @@ LatexTemplate
 November 10, 2012
 By Simon Pratt (mostly)
 
-A template for writing assignments in Latex
+A template for writing assignments in Latex.
+
+Instructions:
+
+ o Fork the repository
+ o Add your content to assignment.tex
+ o Add your references to references.bib
+ o Add your extra files to the Makefile
+ o Run make
