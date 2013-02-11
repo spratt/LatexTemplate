@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LatexTemplate
-% November 10, 2012
+% February 10, 2013
 % By Simon Pratt (mostly)
 \documentclass[11pt]{article}
 
@@ -13,7 +13,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Multicolumn stuff
 \usepackage{multicol}
-\usepackage{newclude} % \include without \clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Configuration
@@ -27,10 +26,16 @@
 \begin{multicols}{2} % remove line if you don't want multiple columns
 
 % Content starts here
-Content
+\begin{question}
+	This is where you rewrite your assignment's questions.
+\end{question}
+
+\begin{answer}
+	This is where you'd write an answer.
+\end{answer}
 % Content ends here
 
-\bibliography{references}
+%\bibliography{references} % uncomment line to add references
 
 \end{multicols} % remove line if you don't want multiple columns
 \end{document}
