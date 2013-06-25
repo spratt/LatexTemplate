@@ -4,13 +4,15 @@
 # November 10, 2010
 ######################################################################
 
-ASSIGN      = assignment
+MAIN_FILE   = assignment
 
 REFERENCES 	= references
 
 PARTS       = 
 
 FIGURES 	=
+
+STYLES_DIR  = styles
 
 STYLES      = Assignment \
 			  CGAlgorithms \
@@ -24,15 +26,15 @@ STYLES      = Assignment \
 
 .PHONY: open clean
 
-MAIN_TEX	= ${ASSIGN}.tex
+MAIN_TEX	= ${MAIN_FILE}.tex
 
 PARTS_TEX	= ${addsuffix .tex,${PARTS}}
 
 BIBFILES	= ${addsuffix .bib,${REFERENCES}}
 
-STYLES_STY  = ${addsuffix .sty,${STYLES}}
+STYLES_STY  = ${addprefix ${STYLES_DIR}/,${addsuffix .sty,${STYLES}}}
 
-PDF     	= ${ASSIGN}.pdf
+PDF     	= ${MAIN_FILE}.pdf
 
 TEX     	= pdflatex
 TEXOPTS 	= -halt-on-error
