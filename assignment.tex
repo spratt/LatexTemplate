@@ -1,18 +1,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LatexTemplate
-% February 10, 2013
+% February 15, 2014
 % By Simon Pratt (mostly)
-\documentclass[11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Remove twocolumn if you want single columns
+\documentclass[11pt,twocolumn]{article}
 
 \usepackage{styles/Assignment}
 \usepackage{styles/CGAlgorithms}
-\usepackage{styles/QuestionAnswer}
 \usepackage{styles/TheoremStuff}
 \usepackage{styles/HeaderStuff}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Multicolumn stuff
-\usepackage{multicol}
+%Feel free to switch question and answer environment styling
+\usepackage{styles/QuestionAnswer}
+%\usepackage{styles/QuestionAnswerAlternative}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Configuration
@@ -23,19 +25,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document
 \begin{document}
-\begin{multicols}{2} % remove line if you don't want multiple columns
 
 % Content starts here
 \begin{question}
-	This is where you rewrite your assignment's questions.
+  This is where you rewrite your assignment's questions.
 \end{question}
 
 \begin{answer}
-	This is where you'd write an answer.
+  This is where you'd write an answer.
 \end{answer}
 % Content ends here
 
 %\bibliography{references} % uncomment line to add references
 
-\end{multicols} % remove line if you don't want multiple columns
 \end{document}
+
