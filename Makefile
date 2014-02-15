@@ -8,7 +8,7 @@ MAIN_FILE   = assignment
 
 REFERENCES  = references
 
-PARTS       = 
+PARTS       =
 
 FIGURES     =
 
@@ -41,7 +41,7 @@ TEXOPTS     = -halt-on-error
 
 BIBTEX      = bibtex
 
-# if your open prorgram isn't listed, OR (||) it to the end
+# if your open program isn't listed, OR (||) it to the end
 open: ${PDF}
 	open $< || gnome-open $<
 
