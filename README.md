@@ -18,22 +18,9 @@ Start by adding content and then looking up LaTex symbols as you need them.
 ## Dependencies:
 
 1. LaTeX (TeX Live)
-
-### Optional:
-
-1. git
-2. GNU make
-3. rubber
-
-## Installation
-
-1. Fork the repository
-
-    `git clone https://github.com/spratt/LatexTemplate.git`
-
-2. Install TeX Live
-
-    Ubuntu/Debian: `sudo apt-get install texlive`
+2. git
+3. GNU make
+4. rubber
 
 ## Resources
 
