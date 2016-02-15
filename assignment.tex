@@ -13,14 +13,13 @@
 \usepackage{styles/HeaderStuff}
 
 %Feel free to switch question and answer environment styling
-\usepackage{styles/QuestionAnswer}
-%\usepackage{styles/QuestionAnswerAlternative}
+%\usepackage{styles/QuestionAnswer}
+\usepackage{styles/QuestionAnswerAlternative}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Configuration
 \fancyhead[L]{Course - Assignment Name}
 \fancyhead[R]{Your Name - Student ID}
-\bibliographystyle{plain}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document
@@ -32,11 +31,12 @@
 \end{question}
 
 \begin{answer}
-  This is where you'd write an answer.
+  This is where you'd write an answer \cite{Knuth:1986}.
 \end{answer}
 % Content ends here
 
-%\bibliography{references} % uncomment line to add references
+\bibliographystyle{plain}
+\bibliography{references} % uncomment line
 
 \end{document}
 

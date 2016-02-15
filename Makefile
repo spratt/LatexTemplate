@@ -8,8 +8,6 @@ MAIN_FILE   = assignment
 
 REFERENCES  = references
 
-PARTS       =
-
 FIGURES     =
 
 STYLES_DIR  = styles
@@ -36,23 +34,14 @@ STYLES_STY  = ${addprefix ${STYLES_DIR}/,${addsuffix .sty,${STYLES}}}
 
 PDF         = ${MAIN_FILE}.pdf
 
-TEX         = pdflatex
-TEXOPTS     = -halt-on-error
-
-BIBTEX      = bibtex
+${PDF}: ${MAIN_TEX} ${PARTS_TEX} ${FIGURES} ${BIBFILES} ${STYLES_STY}
 
 # if your open program isn't listed, OR (||) it to the end
 open: ${PDF}
 	open $< || gnome-open $<
 
-${PDF}: ${MAIN_TEX} ${PARTS_TEX} ${FIGURES} ${BIBFILES} ${STYLES_STY}
-
-# should probably use a tool like rubber, but this works
 %.pdf: %.tex
-	${TEX} ${TEXOPTS} $(basename $<)
-	${BIBTEX} $(basename $<) || ${TEX} ${TEXOPTS} $(basename $<)
-	${TEX} ${TEXOPTS} $(basename $<)
-	${TEX} ${TEXOPTS} $(basename $<)
+	rubber -d $<
 
 # add stuff to delete here
 clean:
