@@ -1,6 +1,6 @@
 # LatexTemplate
 February 14, 2014
-By Simon Pratt (mostly)
+By Simon David Pratt and Christian Delahousse
 
 A template for writing assignments in
 [LaTeX](http://en.wikipedia.org/wiki/LaTeX).
@@ -9,20 +9,21 @@ Latex can look daunting at first, but it is actually be quite easy. This
 template takes care of the boilerplate code so that you can focus on content.
 Start by adding content and then looking up LaTex symbols as you need them.
 
-## Rendered PDF:
-
-https://github.com/spratt/LatexTemplate/blob/OUTPUT/assignment.pdf
-https://github.com/spratt/LatexTemplate/blob/OUTPUT/assignmentAlt.pdf
-
 ## Usage:
 
-* Write `content to `assignment.tex`. Instructions are in the file.
+* Write content to `assignment.tex`. Instructions are in the file.
 * Add your references to `references.bib`
 * Run `make` to render the PDF.
 
 ## Dependencies:
 
-git (optional), GNU make (optional), LaTeX (TeX Live)
+1. LaTeX (TeX Live)
+
+### Optional:
+
+1. git
+2. GNU make
+3. rubber
 
 ## Installation
 
